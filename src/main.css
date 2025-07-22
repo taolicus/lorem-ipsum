@@ -17,3 +17,10 @@
 .links.expanded {
   max-height: 100vh;
 }
+
+#work {
+  background-image: url(work.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
