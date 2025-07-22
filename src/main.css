@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+#hero {
+  background-image: url(hero.jpg);
+  background-size: cover;
+  background-position: center;
+}
