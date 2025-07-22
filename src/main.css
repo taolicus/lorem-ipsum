@@ -5,3 +5,14 @@
   background-size: cover;
   background-position: center;
 }
+
+.links {
+  max-height: 0;
+  @media (min-width: theme(--breakpoint-md)) {
+    max-height: fit-content;
+  }
+}
+
+.links.expanded {
+  max-height: 100vh;
+}
