@@ -24,3 +24,13 @@
   background-position: center;
   background-attachment: fixed;
 }
+
+#headshot-01 {
+  background-image: url(headshot-01.jpg);
+  background-size: cover;
+}
+
+#headshot-02 {
+  background-image: url(headshot-02.jpg);
+  background-size: cover;
+}
