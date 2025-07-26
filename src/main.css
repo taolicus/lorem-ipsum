@@ -72,3 +72,14 @@
 .plx-bg > div {
   height: 100%;
 }
+
+/* SCROLL REVEAL */
+
+.reveal {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.reveal-active {
+  opacity: 1;
+}

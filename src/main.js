@@ -1,5 +1,18 @@
 console.log("Lorem Ipsum");
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry.intersectionRatio);
+
+    if (
+      entry.isIntersecting
+      // && entry.intersectionRatio > 0.2
+    ) {
+      entry.target.classList.add("reveal-active");
+    }
+  });
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   const burger = document.querySelector(".burger");
   const links = document.querySelector(".links");
@@ -17,6 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
     bar3.classList.toggle("-translate-y-1");
     bar3.classList.toggle("rotate-45");
   });
+
+  document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 
   const yearSpan = document.getElementById("current-year");
   if (yearSpan) {
