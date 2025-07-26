@@ -11,405 +11,459 @@
   <body
     class="min-h-screen bg-black leading-8 font-thin tracking-widest text-balance text-white font-stretch-110%"
   >
-    <header class="flex items-center justify-between">
-      <nav class="flex w-full flex-col justify-between px-12 py-4 md:flex-row">
-        <div class="flex flex-wrap items-center justify-between">
-          <div class="h-8">
-            <a
-              href="#"
-              class="inline-block bg-gradient-to-l from-white to-white bg-clip-text text-2xl font-normal text-transparent transition-colors duration-200 hover:from-cyan-500 hover:to-purple-600"
-              >Lorem Ipsum</a
+    <div class="plx scroll-smooth">
+      <div id="hero" class="plx-group">
+        <div class="plx-layer plx-fg">
+          <header class="flex items-center justify-between bg-black">
+            <nav
+              class="flex min-h-[8vh] w-full flex-col justify-between px-12 py-4 md:flex-row"
             >
-          </div>
-          <div class="burger h-8 cursor-pointer md:hidden">
-            <div class="bar1 my-1.5 h-0.5 w-7 bg-white duration-300"></div>
-            <div class="bar2 my-1.5 h-0.5 w-7 bg-white"></div>
-            <div class="bar3 my-1.5 h-0.5 w-7 bg-white duration-300"></div>
-          </div>
-        </div>
-        <div class="links overflow-hidden transition-all duration-300">
-          <ul
-            class="static flex-col gap-4 pt-4 md:flex md:flex-row md:justify-around md:pt-0"
-          >
-            <li>
+              <div class="flex flex-wrap items-center justify-between">
+                <div>
+                  <a
+                    href="#"
+                    class="inline-block bg-gradient-to-l from-white to-white bg-clip-text text-2xl font-normal text-transparent transition-colors duration-200 hover:from-cyan-500 hover:to-purple-600"
+                    >Lorem Ipsum</a
+                  >
+                </div>
+                <div class="burger cursor-pointer md:hidden">
+                  <div
+                    class="bar1 my-1.5 h-0.5 w-7 bg-white duration-300"
+                  ></div>
+                  <div class="bar2 my-1.5 h-0.5 w-7 bg-white"></div>
+                  <div
+                    class="bar3 my-1.5 h-0.5 w-7 bg-white duration-300"
+                  ></div>
+                </div>
+              </div>
+              <div class="links overflow-hidden transition-all duration-300">
+                <ul
+                  class="static flex-col gap-4 pt-4 md:flex md:flex-row md:justify-around md:pt-0"
+                >
+                  <li>
+                    <a
+                      href="#about"
+                      class="inline-block bg-gradient-to-l from-white to-white bg-clip-text text-transparent transition-colors duration-200 hover:from-cyan-500 hover:to-purple-600"
+                      >About</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#work"
+                      class="inline-block bg-gradient-to-l from-white to-white bg-clip-text text-transparent transition-colors duration-200 hover:from-cyan-500 hover:to-purple-600"
+                      >Work</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#contact"
+                      class="inline-block bg-gradient-to-l from-white to-white bg-clip-text text-transparent transition-colors duration-200 hover:from-cyan-500 hover:to-purple-600"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+
+          <section class="flex flex-col">
+            <div
+              class="flex h-[92vh] min-h-[42rem] flex-col items-start justify-center gap-8 bg-gradient-to-r from-red-950/90 to-red-600/20 to-160% p-12"
+            >
+              <h1
+                class="text-7xl font-normal font-stretch-125% md:text-8xl lg:text-9xl"
+              >
+                This is<br />Lorem Ipsum
+              </h1>
+              <p class="text-4xl">A simple one-page portfolio</p>
               <a
                 href="#about"
-                class="inline-block bg-gradient-to-l from-white to-white bg-clip-text text-transparent transition-colors duration-200 hover:from-cyan-500 hover:to-purple-600"
-                >About</a
+                class="inline-block bg-gradient-to-l from-indigo-600 to-indigo-600 p-6 text-2xl uppercase transition-colors duration-500 hover:from-cyan-500 hover:to-purple-600"
               >
-            </li>
-            <li>
-              <a
-                href="#work"
-                class="inline-block bg-gradient-to-l from-white to-white bg-clip-text text-transparent transition-colors duration-200 hover:from-cyan-500 hover:to-purple-600"
-                >Work</a
-              >
-            </li>
-            <li>
-              <a
-                href="#contact"
-                class="inline-block bg-gradient-to-l from-white to-white bg-clip-text text-transparent transition-colors duration-200 hover:from-cyan-500 hover:to-purple-600"
-                >Contact</a
-              >
-            </li>
-          </ul>
+                Learn more
+              </a>
+            </div>
+          </section>
         </div>
-      </nav>
-    </header>
 
-    <section id="hero" class="flex flex-col gap-8">
-      <div
-        class="flex h-[92vh] min-h-[42rem] flex-col items-start justify-center gap-8 bg-gradient-to-r from-red-950/90 to-red-600/20 to-160% p-12"
-      >
-        <h1
-          class="text-7xl font-normal font-stretch-125% md:text-8xl lg:text-9xl"
-        >
-          This is<br />Lorem Ipsum
-        </h1>
-        <p class="text-4xl">A simple one-page portfolio</p>
-        <a
-          href="#about"
-          class="inline-block bg-gradient-to-l from-indigo-600 to-indigo-600 p-6 text-2xl uppercase transition-colors duration-500 hover:from-cyan-500 hover:to-purple-600"
-        >
-          Learn more
-        </a>
+        <div class="plx-layer plx-bg">
+          <div class="hero-bg"></div>
+        </div>
       </div>
-    </section>
 
-    <section id="about" class="flex min-h-screen flex-col justify-center">
-      <div class="container mx-auto flex flex-col px-5 py-24">
-        <div class="mx-auto lg:w-4/6">
-          <div class="mt-10 flex flex-col sm:flex-row">
-            <div class="text-center sm:w-1/3 sm:py-8 sm:pr-8">
-              <div
-                class="flex flex-col items-center justify-center gap-4 text-center"
-              >
+      <!-- <div id="about" class="plx-group bg-black">
+        <section class="flex min-h-screen flex-col justify-center">
+          <div class="container mx-auto flex flex-col px-5 py-24">
+            <div class="mx-auto lg:w-4/6">
+              <div class="mt-10 flex flex-col sm:flex-row">
+                <div class="text-center sm:w-1/3 sm:py-8 sm:pr-8">
+                  <div
+                    class="flex flex-col items-center justify-center gap-4 text-center"
+                  >
+                    <div
+                      id="headshot-01"
+                      class="inline-flex h-40 w-40 items-center justify-center rounded-full bg-black text-gray-600"
+                    ></div>
+                    <h2 class="text-3xl text-indigo-600">Lorem Ipsum</h2>
+                  </div>
+                </div>
                 <div
-                  id="headshot-01"
-                  class="inline-flex h-40 w-40 items-center justify-center rounded-full bg-black text-gray-600"
-                ></div>
-                <h2 class="text-3xl text-indigo-600">Lorem Ipsum</h2>
+                  class="mt-4 flex flex-col items-start gap-8 border-t border-gray-800 pt-4 text-left sm:mt-0 sm:w-2/3 sm:border-t-0 sm:border-l sm:py-8 sm:pl-8"
+                >
+                  <h2 class="text-6xl">About</h2>
+                  <p class="mb-4 text-lg leading-relaxed">
+                    Meggings portland fingerstache lyft, post-ironic fixie man
+                    bun banh mi umami everyday carry hexagon locavore direct
+                    trade art party. Locavore small batch listicle gastropub
+                    farm-to-table lumbersexual salvia messenger bag. Coloring
+                    book flannel truffaut craft beer drinking vinegar sartorial,
+                    disrupt fashion axe normcore meh butcher. Portland 90's
+                    scenester vexillologist forage post-ironic asymmetrical,
+                    chartreuse disrupt butcher paleo intelligentsia pabst before
+                    they sold out four loko. 3 wolf moon brooklyn.
+                  </p>
+                  <a
+                    href="#work"
+                    class="bg-gradient-to-l from-indigo-600 to-indigo-600 bg-clip-text text-transparent transition-colors duration-500 hover:from-cyan-500 hover:to-purple-600"
+                    >Check my work</a
+                  >
+                </div>
               </div>
             </div>
+          </div>
+        </section>
+      </div> -->
+
+      <div id="work" class="plx-group">
+        <div class="plx-layer plx-fg">
+          <section>
             <div
-              class="mt-4 flex flex-col items-start gap-8 border-t border-gray-800 pt-4 text-left sm:mt-0 sm:w-2/3 sm:border-t-0 sm:border-l sm:py-8 sm:pl-8"
+              class="bg-gradient-to-r from-red-950/90 to-red-600/20 to-160% p-6"
             >
-              <h2 class="text-6xl">About</h2>
-              <p class="mb-4 text-lg leading-relaxed">
-                Meggings portland fingerstache lyft, post-ironic fixie man bun
-                banh mi umami everyday carry hexagon locavore direct trade art
-                party. Locavore small batch listicle gastropub farm-to-table
-                lumbersexual salvia messenger bag. Coloring book flannel
-                truffaut craft beer drinking vinegar sartorial, disrupt fashion
-                axe normcore meh butcher. Portland 90's scenester vexillologist
-                forage post-ironic asymmetrical, chartreuse disrupt butcher
-                paleo intelligentsia pabst before they sold out four loko. 3
-                wolf moon brooklyn.
+              <h2 class="pt-32 text-center text-6xl">Work</h2>
+              <div class="flex flex-wrap px-5 py-24">
+                <div
+                  class="relative mx-auto flex pt-10 pb-20 sm:items-center md:w-2/3"
+                >
+                  <div
+                    class="absolute inset-0 flex h-full w-6 items-center justify-center"
+                  >
+                    <div class="pointer-events-none h-full w-1 bg-black"></div>
+                  </div>
+                  <div
+                    class="title-font relative z-10 mt-10 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-indigo-600 text-sm font-medium text-white sm:mt-0"
+                  >
+                    1
+                  </div>
+                  <div
+                    class="flex flex-grow flex-col items-start pl-6 sm:flex-row sm:items-center md:pl-8"
+                  >
+                    <div
+                      class="inline-flex h-24 w-24 flex-shrink-0 items-center justify-center rounded-full bg-black text-indigo-600"
+                    >
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        class="h-12 w-12"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="mt-6 flex-grow sm:mt-0 sm:pl-6">
+                      <h2
+                        class="title-font mb-1 text-xl font-medium text-white"
+                      >
+                        Shooting Stars
+                      </h2>
+                      <p class="leading-relaxed">
+                        VHS cornhole pop-up, try-hard 8-bit iceland helvetica.
+                        Kinfolk bespoke try-hard cliche palo santo offal.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="relative mx-auto flex pb-20 sm:items-center md:w-2/3"
+                >
+                  <div
+                    class="absolute inset-0 flex h-full w-6 items-center justify-center"
+                  >
+                    <div class="pointer-events-none h-full w-1 bg-black"></div>
+                  </div>
+                  <div
+                    class="title-font relative z-10 mt-10 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-indigo-600 text-sm font-medium text-white sm:mt-0"
+                  >
+                    2
+                  </div>
+                  <div
+                    class="flex flex-grow flex-col items-start pl-6 sm:flex-row sm:items-center md:pl-8"
+                  >
+                    <div
+                      class="inline-flex h-24 w-24 flex-shrink-0 items-center justify-center rounded-full bg-black text-indigo-600"
+                    >
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        class="h-12 w-12"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                      </svg>
+                    </div>
+                    <div class="mt-6 flex-grow sm:mt-0 sm:pl-6">
+                      <h2
+                        class="title-font mb-1 text-xl font-medium text-white"
+                      >
+                        The Catalyzer
+                      </h2>
+                      <p class="leading-relaxed">
+                        VHS cornhole pop-up, try-hard 8-bit iceland helvetica.
+                        Kinfolk bespoke try-hard cliche palo santo offal.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="relative mx-auto flex pb-20 sm:items-center md:w-2/3"
+                >
+                  <div
+                    class="absolute inset-0 flex h-full w-6 items-center justify-center"
+                  >
+                    <div class="pointer-events-none h-full w-1 bg-black"></div>
+                  </div>
+                  <div
+                    class="title-font relative z-10 mt-10 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-indigo-600 text-sm font-medium text-white sm:mt-0"
+                  >
+                    3
+                  </div>
+                  <div
+                    class="flex flex-grow flex-col items-start pl-6 sm:flex-row sm:items-center md:pl-8"
+                  >
+                    <div
+                      class="inline-flex h-24 w-24 flex-shrink-0 items-center justify-center rounded-full bg-black text-indigo-600"
+                    >
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        class="h-12 w-12"
+                        viewBox="0 0 24 24"
+                      >
+                        <circle cx="12" cy="5" r="3"></circle>
+                        <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+                      </svg>
+                    </div>
+                    <div class="mt-6 flex-grow sm:mt-0 sm:pl-6">
+                      <h2
+                        class="title-font mb-1 text-xl font-medium text-white"
+                      >
+                        The 400 Blows
+                      </h2>
+                      <p class="leading-relaxed">
+                        VHS cornhole pop-up, try-hard 8-bit iceland helvetica.
+                        Kinfolk bespoke try-hard cliche palo santo offal.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="relative mx-auto flex pb-10 sm:items-center md:w-2/3"
+                >
+                  <div
+                    class="absolute inset-0 flex h-full w-6 items-center justify-center"
+                  >
+                    <div class="pointer-events-none h-full w-1 bg-black"></div>
+                  </div>
+                  <div
+                    class="title-font relative z-10 mt-10 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-indigo-600 text-sm font-medium text-white sm:mt-0"
+                  >
+                    4
+                  </div>
+                  <div
+                    class="flex flex-grow flex-col items-start pl-6 sm:flex-row sm:items-center md:pl-8"
+                  >
+                    <div
+                      class="inline-flex h-24 w-24 flex-shrink-0 items-center justify-center rounded-full bg-black text-indigo-600"
+                    >
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        class="h-12 w-12"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"
+                        ></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                      </svg>
+                    </div>
+                    <div class="mt-6 flex-grow sm:mt-0 sm:pl-6">
+                      <h2
+                        class="title-font mb-1 text-xl font-medium text-white"
+                      >
+                        Neptune
+                      </h2>
+                      <p class="leading-relaxed">
+                        VHS cornhole pop-up, try-hard 8-bit iceland helvetica.
+                        Kinfolk bespoke try-hard cliche palo santo offal.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="plx-layer plx-bg">
+          <div class="work-bg"></div>
+        </div>
+      </div>
+
+      <div id="testimonials" class="plx-group">
+        <div class="plx-layer plx-fg">
+          <section class="bg-black">
+            <div class="container mx-auto px-5 py-24">
+              <div
+                class="mx-auto flex h-screen w-full flex-col items-center justify-center gap-8 text-center lg:w-3/4 xl:w-1/2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="inline-block h-8 w-8 text-indigo-600"
+                  viewBox="0 0 975.036 975.036"
+                >
+                  <path
+                    d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+                  ></path>
+                </svg>
+                <p class="text-2xl leading-relaxed">
+                  Edison bulb retro cloud bread echo park, helvetica stumptown
+                  taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee
+                  ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut
+                  adaptogen squid fanny pack vaporware. Man bun next level
+                  coloring book skateboard four loko knausgaard.
+                </p>
+                <div class="flex flex-col items-center gap-2">
+                  <div
+                    id="headshot-02"
+                    class="inline-flex h-40 w-40 items-center justify-center rounded-full bg-black text-gray-600"
+                  ></div>
+                  <h2
+                    class="title-font text-2xl font-medium tracking-wider text-indigo-600"
+                  >
+                    Lorem Ipsum
+                  </h2>
+                  <p class="text-sm text-gray-500">Senior Product Designer</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div id="contact" class="plx-group">
+        <div class="plx-layer plx-fg">
+          <section
+            class="flex h-[75vh] flex-col justify-center gap-8 bg-radial from-cyan-500 to-indigo-600 bg-fixed p-6 py-16 text-center"
+          >
+            <div class="flex flex-col items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-mail-icon lucide-mail inline-block"
+              >
+                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+              </svg>
+              <p class="text-2xl">Say hello:</p>
+              <p class="text-4xl">
+                <a href="mailto:example@example.com" class="hover:underline">
+                  lorem@ipsum.sit
+                </a>
               </p>
-              <a
-                href="#work"
-                class="bg-gradient-to-l from-indigo-600 to-indigo-600 bg-clip-text text-transparent transition-colors duration-500 hover:from-cyan-500 hover:to-purple-600"
-                >Check my work</a
-              >
             </div>
-          </div>
+
+            <div class="mx-auto flex w-full justify-center gap-4">
+              <a href="#tiktok">
+                <svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-6"
+                >
+                  <title>TikTok</title>
+                  <path
+                    fill="#fff"
+                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
+                  />
+                </svg>
+              </a>
+
+              <a href="#instagram">
+                <svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-6"
+                >
+                  <title>Instagram</title>
+                  <path
+                    fill="#fff"
+                    d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+                  />
+                </svg>
+              </a>
+
+              <a href="#youtube">
+                <svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-6"
+                >
+                  <title>YouTube</title>
+                  <path
+                    fill="#fff"
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </section>
+
+          <footer class="flex flex-col gap-4 p-4 text-center text-gray-400">
+            <p>
+              <span style="display: inline-block; scale: -1">©</span>
+              <span id="current-year"></span>
+              <a href="https://tao.cl" class="underline" target="_blank"
+                >Tao.cl</a
+              >. All rights and lefts released.
+            </p>
+          </footer>
         </div>
       </div>
-    </section>
-
-    <section id="work" class="mx-auto flex flex-col gap-8">
-      <div class="bg-gradient-to-r from-red-950/90 to-red-600/20 to-160% p-6">
-        <h2 class="pt-32 text-center text-6xl">Work</h2>
-        <div class="container mx-auto flex flex-wrap px-5 py-24">
-          <div
-            class="relative mx-auto flex pt-10 pb-20 sm:items-center md:w-2/3"
-          >
-            <div
-              class="absolute inset-0 flex h-full w-6 items-center justify-center"
-            >
-              <div class="pointer-events-none h-full w-1 bg-black"></div>
-            </div>
-            <div
-              class="title-font relative z-10 mt-10 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-indigo-600 text-sm font-medium text-white sm:mt-0"
-            >
-              1
-            </div>
-            <div
-              class="flex flex-grow flex-col items-start pl-6 sm:flex-row sm:items-center md:pl-8"
-            >
-              <div
-                class="inline-flex h-24 w-24 flex-shrink-0 items-center justify-center rounded-full bg-black text-indigo-600"
-              >
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="h-12 w-12"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                </svg>
-              </div>
-              <div class="mt-6 flex-grow sm:mt-0 sm:pl-6">
-                <h2 class="title-font mb-1 text-xl font-medium text-white">
-                  Shooting Stars
-                </h2>
-                <p class="leading-relaxed">
-                  VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk
-                  bespoke try-hard cliche palo santo offal.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="relative mx-auto flex pb-20 sm:items-center md:w-2/3">
-            <div
-              class="absolute inset-0 flex h-full w-6 items-center justify-center"
-            >
-              <div class="pointer-events-none h-full w-1 bg-black"></div>
-            </div>
-            <div
-              class="title-font relative z-10 mt-10 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-indigo-600 text-sm font-medium text-white sm:mt-0"
-            >
-              2
-            </div>
-            <div
-              class="flex flex-grow flex-col items-start pl-6 sm:flex-row sm:items-center md:pl-8"
-            >
-              <div
-                class="inline-flex h-24 w-24 flex-shrink-0 items-center justify-center rounded-full bg-black text-indigo-600"
-              >
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="h-12 w-12"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                </svg>
-              </div>
-              <div class="mt-6 flex-grow sm:mt-0 sm:pl-6">
-                <h2 class="title-font mb-1 text-xl font-medium text-white">
-                  The Catalyzer
-                </h2>
-                <p class="leading-relaxed">
-                  VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk
-                  bespoke try-hard cliche palo santo offal.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="relative mx-auto flex pb-20 sm:items-center md:w-2/3">
-            <div
-              class="absolute inset-0 flex h-full w-6 items-center justify-center"
-            >
-              <div class="pointer-events-none h-full w-1 bg-black"></div>
-            </div>
-            <div
-              class="title-font relative z-10 mt-10 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-indigo-600 text-sm font-medium text-white sm:mt-0"
-            >
-              3
-            </div>
-            <div
-              class="flex flex-grow flex-col items-start pl-6 sm:flex-row sm:items-center md:pl-8"
-            >
-              <div
-                class="inline-flex h-24 w-24 flex-shrink-0 items-center justify-center rounded-full bg-black text-indigo-600"
-              >
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="h-12 w-12"
-                  viewBox="0 0 24 24"
-                >
-                  <circle cx="12" cy="5" r="3"></circle>
-                  <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
-                </svg>
-              </div>
-              <div class="mt-6 flex-grow sm:mt-0 sm:pl-6">
-                <h2 class="title-font mb-1 text-xl font-medium text-white">
-                  The 400 Blows
-                </h2>
-                <p class="leading-relaxed">
-                  VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk
-                  bespoke try-hard cliche palo santo offal.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="relative mx-auto flex pb-10 sm:items-center md:w-2/3">
-            <div
-              class="absolute inset-0 flex h-full w-6 items-center justify-center"
-            >
-              <div class="pointer-events-none h-full w-1 bg-black"></div>
-            </div>
-            <div
-              class="title-font relative z-10 mt-10 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-indigo-600 text-sm font-medium text-white sm:mt-0"
-            >
-              4
-            </div>
-            <div
-              class="flex flex-grow flex-col items-start pl-6 sm:flex-row sm:items-center md:pl-8"
-            >
-              <div
-                class="inline-flex h-24 w-24 flex-shrink-0 items-center justify-center rounded-full bg-black text-indigo-600"
-              >
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="h-12 w-12"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                  <circle cx="12" cy="7" r="4"></circle>
-                </svg>
-              </div>
-              <div class="mt-6 flex-grow sm:mt-0 sm:pl-6">
-                <h2 class="title-font mb-1 text-xl font-medium text-white">
-                  Neptune
-                </h2>
-                <p class="leading-relaxed">
-                  VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk
-                  bespoke try-hard cliche palo santo offal.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container mx-auto px-5 py-24">
-        <div
-          class="mx-auto flex h-screen w-full flex-col items-center justify-center gap-8 text-center lg:w-3/4 xl:w-1/2"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            class="inline-block h-8 w-8 text-indigo-600"
-            viewBox="0 0 975.036 975.036"
-          >
-            <path
-              d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
-            ></path>
-          </svg>
-          <p class="text-2xl leading-relaxed">
-            Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki
-            taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman
-            taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid
-            fanny pack vaporware. Man bun next level coloring book skateboard
-            four loko knausgaard.
-          </p>
-          <div class="flex flex-col items-center gap-2">
-            <div
-              id="headshot-02"
-              class="inline-flex h-40 w-40 items-center justify-center rounded-full bg-black text-gray-600"
-            ></div>
-            <h2
-              class="title-font text-2xl font-medium tracking-wider text-indigo-600"
-            >
-              Lorem Ipsum
-            </h2>
-            <p class="text-sm text-gray-500">Senior Product Designer</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section
-      id="contact"
-      class="flex h-[75vh] flex-col justify-center gap-8 bg-radial from-cyan-500 to-indigo-600 bg-fixed p-6 py-16 text-center"
-    >
-      <div class="flex flex-col items-center gap-2">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-mail-icon lucide-mail inline-block"
-        >
-          <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
-          <rect x="2" y="4" width="20" height="16" rx="2" />
-        </svg>
-        <p class="text-2xl">Say hello:</p>
-        <p class="text-4xl">
-          <a href="mailto:example@example.com" class="hover:underline">
-            lorem@ipsum.sit
-          </a>
-        </p>
-      </div>
-
-      <div class="mx-auto flex w-full justify-center gap-4">
-        <a href="#tiktok">
-          <svg
-            role="img"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            class="size-6"
-          >
-            <title>TikTok</title>
-            <path
-              fill="#fff"
-              d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
-            />
-          </svg>
-        </a>
-
-        <a href="#instagram">
-          <svg
-            role="img"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            class="size-6"
-          >
-            <title>Instagram</title>
-            <path
-              fill="#fff"
-              d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
-            />
-          </svg>
-        </a>
-
-        <a href="#youtube">
-          <svg
-            role="img"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            class="size-6"
-          >
-            <title>YouTube</title>
-            <path
-              fill="#fff"
-              d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
-            />
-          </svg>
-        </a>
-      </div>
-    </section>
-
-    <footer class="flex flex-col gap-4 p-4 text-center text-gray-400">
-      <p>
-        <span style="display: inline-block; scale: -1">©</span>
-        <span id="current-year"></span>
-        <a href="https://tao.cl" class="underline" target="_blank">Tao.cl</a>.
-        All rights and lefts released.
-      </p>
-    </footer>
+    </div>
   </body>
 </html>

@@ -1,11 +1,9 @@
 @import "tailwindcss";
 
-#hero {
+.hero-bg {
   background-image: url(hero.jpg);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  overflow: hidden;
 }
 
 .links {
@@ -19,11 +17,10 @@
   max-height: 100vh;
 }
 
-#work {
+.work-bg {
   background-image: url(work.jpg);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 }
 
 #headshot-01 {
@@ -34,4 +31,40 @@
 #headshot-02 {
   background-image: url(headshot-02.jpg);
   background-size: cover;
+}
+
+/* PLX */
+
+.plx {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+
+.plx-group {
+  position: relative;
+  min-height: 100vh;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+
+.plx-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.plx-fg {
+  z-index: 1;
+  position: relative;
+}
+
+.plx-bg {
+  transform: translateZ(-1px) scale(1.5);
+  div {
+    height: 100%;
+  }
 }
