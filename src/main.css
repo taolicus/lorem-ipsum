@@ -44,7 +44,6 @@
 
 .plx-group {
   position: relative;
-  min-height: 100vh;
   transform-style: preserve-3d;
   overflow: hidden;
 }
