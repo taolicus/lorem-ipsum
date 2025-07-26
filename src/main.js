@@ -1,4 +1,4 @@
-console.log("Oli!");
+console.log("Lorem Ipsum");
 
 document.addEventListener("DOMContentLoaded", function () {
   const burger = document.querySelector(".burger");
