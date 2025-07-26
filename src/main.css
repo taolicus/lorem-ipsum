@@ -1,10 +1,6 @@
 @import "tailwindcss";
 
-.hero-bg {
-  background-image: url(hero.jpg);
-  background-size: cover;
-  background-position: center;
-}
+/* NAV */
 
 .links {
   max-height: 0;
@@ -15,6 +11,14 @@
 
 .links.expanded {
   max-height: 100vh;
+}
+
+/* BG IMG */
+
+.hero-bg {
+  background-image: url(hero.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .work-bg {
@@ -57,13 +61,14 @@
 }
 
 .plx-fg {
-  z-index: 1;
   position: relative;
+  z-index: 1;
 }
 
 .plx-bg {
   transform: translateZ(-1px) scale(1.5);
-  div {
-    height: 100%;
-  }
+}
+
+.plx-bg > div {
+  height: 100%;
 }
