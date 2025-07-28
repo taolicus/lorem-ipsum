@@ -1,0 +1,9 @@
+.reveal {
+  opacity: 0;
+  transition-delay: 3s;
+  transition: opacity 1s ease-out;
+}
+
+.reveal-active {
+  opacity: 1;
+}

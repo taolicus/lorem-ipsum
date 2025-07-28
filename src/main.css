@@ -1,85 +1,14 @@
 @import "tailwindcss";
+@import "./css/base.css";
+@import "./css/components.css";
 
-/* NAV */
+/* Animations */
+@import "./css/plx.css";
+@import "./css/reveal.css";
 
-.links {
-  max-height: 0;
-  @media (min-width: theme(--breakpoint-md)) {
-    max-height: fit-content;
-  }
-}
-
-.links.expanded {
-  max-height: 100vh;
-}
-
-/* BG IMG */
-
-.hero-bg {
-  background-image: url(hero.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.work-bg {
-  background-image: url(work.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-#headshot-01 {
-  background-image: url(headshot-01.jpg);
-  background-size: cover;
-}
-
-#headshot-02 {
-  background-image: url(headshot-02.jpg);
-  background-size: cover;
-}
-
-/* PLX */
-
-.plx {
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  perspective: 2px;
-}
-
-.plx-group {
-  position: relative;
-  transform-style: preserve-3d;
-  overflow: hidden;
-}
-
-.plx-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.plx-fg {
-  position: relative;
-  z-index: 1;
-}
-
-.plx-bg {
-  transform: translateZ(-1px) scale(1.5);
-}
-
-.plx-bg > div {
-  height: 100%;
-}
-
-/* SCROLL REVEAL */
-
-.reveal {
-  opacity: 0;
-  transition: opacity 1s ease-out;
-}
-
-.reveal-active {
-  opacity: 1;
-}
+/* Sections */
+@import "./css/hero.css";
+@import "./css/about.css";
+@import "./css/work.css";
+@import "./css/testimonials.css";
+@import "./css/contact.css";

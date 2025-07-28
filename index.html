@@ -1,97 +1,56 @@
 <!doctype html>
-<html lang="en" class="min-h-screen scroll-smooth">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lorem Ipsum</title>
-    <link rel="shortcut icon" href="./src/tao.svg" />
+    <link rel="shortcut icon" href="./src/img/tao.svg" />
     <link rel="stylesheet" href="./src/main.css" />
     <script type="module" src="./src/main.js" defer></script>
   </head>
-  <body
-    class="min-h-screen bg-black leading-8 font-thin tracking-widest text-balance text-white font-stretch-110%"
-  >
-    <div class="plx scroll-smooth">
+  <body>
+    <div class="plx">
       <div id="hero" class="plx-group">
         <div class="plx-layer plx-fg">
-          <header class="flex items-center justify-between bg-black">
-            <nav
-              class="flex min-h-[8vh] w-full flex-col justify-between px-12 py-4 md:flex-row"
-            >
+          <header>
+            <nav>
               <div class="flex flex-wrap items-center justify-between">
-                <div>
-                  <a
-                    href="#"
-                    class="inline-block bg-gradient-to-l from-white to-white bg-clip-text text-2xl font-normal text-transparent transition-colors duration-200 hover:from-cyan-500 hover:to-purple-600"
-                    >Lorem Ipsum</a
-                  >
-                </div>
-                <div class="burger cursor-pointer md:hidden">
-                  <div
-                    class="bar1 my-1.5 h-0.5 w-7 bg-white duration-300"
-                  ></div>
-                  <div class="bar2 my-1.5 h-0.5 w-7 bg-white"></div>
-                  <div
-                    class="bar3 my-1.5 h-0.5 w-7 bg-white duration-300"
-                  ></div>
+                <a href="#" class="brand">Lorem Ipsum</a>
+                <div class="burger">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
                 </div>
               </div>
-              <div class="links overflow-hidden transition-all duration-300">
-                <ul
-                  class="static flex-col gap-4 pt-4 md:flex md:flex-row md:justify-around md:pt-0"
-                >
+              <div class="links">
+                <ul>
                   <li>
-                    <a
-                      href="#about"
-                      class="inline-block bg-gradient-to-l from-white to-white bg-clip-text text-transparent transition-colors duration-200 hover:from-cyan-500 hover:to-purple-600"
-                      >About</a
-                    >
+                    <a href="#about">About</a>
                   </li>
                   <li>
-                    <a
-                      href="#work"
-                      class="inline-block bg-gradient-to-l from-white to-white bg-clip-text text-transparent transition-colors duration-200 hover:from-cyan-500 hover:to-purple-600"
-                      >Work</a
-                    >
+                    <a href="#work">Work</a>
                   </li>
                   <li>
-                    <a
-                      href="#contact"
-                      class="inline-block bg-gradient-to-l from-white to-white bg-clip-text text-transparent transition-colors duration-200 hover:from-cyan-500 hover:to-purple-600"
-                      >Contact</a
-                    >
+                    <a href="#contact">Contact</a>
                   </li>
                 </ul>
               </div>
             </nav>
           </header>
 
-          <section class="flex flex-col">
-            <div
-              class="flex h-[92vh] min-h-[42rem] flex-col items-start justify-center gap-8 bg-gradient-to-r from-red-950/90 to-red-600/20 to-160% p-12"
-            >
-              <h1
-                class="text-7xl font-normal font-stretch-125% md:text-8xl lg:text-9xl"
-              >
-                This is<br />Lorem Ipsum
-              </h1>
-              <p class="text-4xl">A simple one-page portfolio</p>
-              <a
-                href="#about"
-                class="inline-block bg-gradient-to-l from-indigo-600 to-indigo-600 p-6 text-2xl uppercase transition-colors duration-500 hover:from-cyan-500 hover:to-purple-600"
-              >
-                Learn more
-              </a>
-            </div>
+          <section>
+            <h1>This is<br />Lorem Ipsum</h1>
+            <p>A simple one-page portfolio</p>
+            <a href="#about" class="cta"> Learn more </a>
           </section>
         </div>
 
         <div class="plx-layer plx-bg">
-          <div class="hero-bg"></div>
+          <div class="bg"></div>
         </div>
       </div>
 
-      <div id="about" class="plx-group bg-black">
+      <div id="about" class="plx-group">
         <section class="flex min-h-screen flex-col justify-center">
           <div class="container mx-auto flex flex-col px-5 py-24">
             <div class="reveal mx-auto lg:w-4/6">
@@ -102,11 +61,12 @@
                   >
                     <div
                       id="headshot-01"
-                      class="inline-flex h-40 w-40 items-center justify-center rounded-full bg-black text-gray-600"
+                      class="inline-flex h-40 w-40 items-center justify-center rounded-full"
                     ></div>
                     <h2 class="text-3xl text-indigo-600">Lorem Ipsum</h2>
                   </div>
                 </div>
+
                 <div
                   class="mt-4 flex flex-col items-start gap-8 border-t border-gray-800 pt-4 text-left sm:mt-0 sm:w-2/3 sm:border-t-0 sm:border-l sm:py-8 sm:pl-8"
                 >

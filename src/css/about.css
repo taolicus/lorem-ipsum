@@ -1,0 +1,8 @@
+#about {
+  @apply bg-black;
+}
+
+#headshot-01 {
+  background-image: url(../img/headshot-01.jpg);
+  background-size: cover;
+}

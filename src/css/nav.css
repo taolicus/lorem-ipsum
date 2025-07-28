@@ -1,0 +1,55 @@
+#hero header {
+  @apply flex items-center justify-between bg-black;
+
+  nav {
+    @apply flex min-h-[8vh] w-full flex-col justify-between px-12 py-4 md:flex-row;
+
+    .brand {
+      @apply inline-block bg-gradient-to-l from-white to-white bg-clip-text text-2xl font-normal text-transparent transition-colors duration-200 hover:from-cyan-500 hover:to-purple-600;
+    }
+
+    .burger {
+      @apply cursor-pointer md:hidden;
+
+      .bar1 {
+        @apply my-1.5 h-0.5 w-7 bg-white duration-300;
+      }
+
+      .bar2 {
+        @apply my-1.5 h-0.5 w-7 bg-white;
+      }
+
+      .bar3 {
+        @apply my-1.5 h-0.5 w-7 bg-white duration-300;
+      }
+
+      &.open {
+        .bar1 {
+          @apply translate-y-1 -rotate-45 transform;
+        }
+        .bar2 {
+          @apply hidden;
+        }
+        .bar3 {
+          @apply -translate-y-1 rotate-45 transform;
+        }
+      }
+    }
+
+    .links {
+      @apply max-h-0 overflow-hidden transition-all duration-300 md:max-h-fit;
+
+      ul {
+        @apply static flex-col gap-4 pt-4 md:flex md:flex-row md:justify-around md:pt-0;
+
+        a {
+          @apply inline-block bg-gradient-to-l from-white to-white bg-clip-text text-transparent transition-colors duration-200 hover:from-cyan-500 hover:to-purple-600;
+        }
+      }
+
+      &.open {
+        @apply max-h-screen;
+      }
+    }
+  }
+}

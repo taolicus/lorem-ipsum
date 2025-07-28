@@ -1,0 +1,25 @@
+.plx {
+  @apply h-screen overflow-x-hidden overflow-y-auto scroll-smooth perspective-near;
+
+  perspective: 2px;
+}
+
+.plx-group {
+  @apply relative overflow-hidden transform-3d;
+}
+
+.plx-layer {
+  @apply absolute top-0 right-0 bottom-0 left-0;
+}
+
+.plx-fg {
+  @apply relative z-[1];
+}
+
+.plx-bg {
+  @apply translate-z-[-1px] scale-[1.5];
+
+  div {
+    @apply h-full;
+  }
+}

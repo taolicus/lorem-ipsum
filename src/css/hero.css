@@ -1,0 +1,20 @@
+@import "./nav.css";
+
+#hero {
+  section {
+    @apply flex h-[92vh] min-h-[42rem] flex-col items-start justify-center gap-8 bg-gradient-to-r from-red-950/90 to-red-600/20 to-160% p-12;
+
+    h1 {
+      @apply text-7xl font-normal font-stretch-125% md:text-8xl lg:text-9xl;
+    }
+
+    p {
+      @apply text-4xl;
+    }
+  }
+
+  .bg {
+    @apply bg-cover bg-center;
+    background-image: url(../img/hero.jpg);
+  }
+}
