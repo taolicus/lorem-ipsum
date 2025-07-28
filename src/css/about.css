@@ -3,6 +3,6 @@
 }
 
 #headshot-01 {
+  @apply bg-cover bg-center;
   background-image: url(../img/headshot-01.jpg);
-  background-size: cover;
 }

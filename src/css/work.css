@@ -1,5 +1,4 @@
 .work-bg {
+  @apply bg-cover bg-center;
   background-image: url(../img/work.jpg);
-  background-size: cover;
-  background-position: center;
 }
