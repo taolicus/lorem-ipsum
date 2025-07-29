@@ -2,13 +2,17 @@
   @apply flex items-center justify-between bg-black;
 
   nav {
-    @apply flex min-h-[8vh] w-full flex-col justify-between px-12 py-4 md:flex-row;
+    @apply flex w-full flex-col justify-between px-12 py-4 md:flex-row;
+
+    .header-bar {
+      @apply flex flex-wrap items-center justify-between;
+    }
 
     .brand {
       @apply inline-block bg-gradient-to-l from-white to-white bg-clip-text text-2xl font-normal text-transparent transition-colors duration-200 hover:from-cyan-500 hover:to-purple-600;
     }
 
-    .burger {
+    .mobile-menu-btn {
       @apply cursor-pointer md:hidden;
 
       .bar1 {
@@ -22,8 +26,18 @@
       .bar3 {
         @apply my-1.5 h-0.5 w-7 bg-white duration-300;
       }
+    }
 
-      &.open {
+    ul {
+      @apply static max-h-0 flex-col gap-4 overflow-hidden pt-0 transition-all duration-300 md:flex md:max-h-fit md:flex-row md:justify-around;
+
+      a {
+        @apply inline-block bg-gradient-to-l from-white to-white bg-clip-text text-transparent transition-colors duration-200 hover:from-cyan-500 hover:to-purple-600;
+      }
+    }
+
+    &.open {
+      .mobile-menu-btn {
         .bar1 {
           @apply translate-y-1 -rotate-45 transform;
         }
@@ -34,21 +48,9 @@
           @apply -translate-y-1 rotate-45 transform;
         }
       }
-    }
-
-    .links {
-      @apply max-h-0 overflow-hidden transition-all duration-300 md:max-h-fit;
 
       ul {
-        @apply static flex-col gap-4 pt-4 md:flex md:flex-row md:justify-around md:pt-0;
-
-        a {
-          @apply inline-block bg-gradient-to-l from-white to-white bg-clip-text text-transparent transition-colors duration-200 hover:from-cyan-500 hover:to-purple-600;
-        }
-      }
-
-      &.open {
-        @apply max-h-screen;
+        @apply max-h-screen pt-4;
       }
     }
   }

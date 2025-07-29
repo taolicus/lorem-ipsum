@@ -10,12 +10,11 @@ const observer = new IntersectionObserver((entries) => {
 
 document.addEventListener("DOMContentLoaded", function () {
   // Nav
-  const burger = document.querySelector(".burger");
-  const links = document.querySelector(".links");
+  const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
+  const nav = document.querySelector("#hero nav");
 
-  burger.addEventListener("click", () => {
-    links.classList.toggle("open");
-    burger.classList.toggle("open");
+  mobileMenuBtn.addEventListener("click", () => {
+    nav.classList.toggle("open");
   });
 
   // Reveal
