@@ -1,4 +1,14 @@
-.work-bg {
-  @apply bg-cover bg-center;
-  background-image: url(../img/work.jpg);
+#work {
+  section {
+    @apply bg-gradient-to-r from-red-950/90 to-red-600/20 to-160% p-6;
+
+    & > h2 {
+      @apply pt-32 text-center text-6xl;
+    }
+  }
+
+  .bg {
+    @apply bg-cover bg-center;
+    background-image: url(../img/work.jpg);
+  }
 }

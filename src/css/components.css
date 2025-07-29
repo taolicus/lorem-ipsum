@@ -1,3 +1,27 @@
 .cta {
   @apply inline-block bg-gradient-to-l from-indigo-600 to-indigo-600 p-6 text-2xl uppercase transition-colors duration-500 hover:from-cyan-500 hover:to-purple-600;
 }
+
+.headshot {
+  @apply flex flex-col items-center justify-center gap-2 text-center;
+
+  .img {
+    @apply inline-flex h-40 w-40 items-center justify-center rounded-full;
+  }
+
+  h2 {
+    @apply text-3xl text-indigo-600;
+  }
+
+  p {
+    @apply text-sm;
+  }
+}
+
+.socials {
+  @apply mx-auto flex w-full justify-center gap-4;
+
+  a svg {
+    @apply size-6;
+  }
+}

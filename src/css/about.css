@@ -1,8 +1,12 @@
 #about {
   @apply bg-black;
+
+  section {
+    @apply flex min-h-screen flex-col justify-center;
+  }
 }
 
-#headshot-01 {
+#loremipsum .img {
   @apply bg-cover bg-center;
   background-image: url(../img/headshot-01.jpg);
 }

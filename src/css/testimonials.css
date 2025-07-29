@@ -1,4 +1,16 @@
-#headshot-02 {
+.quote {
+  @apply mx-auto flex w-full flex-col items-center justify-center gap-8 text-center lg:w-3/4 xl:w-1/2;
+
+  svg {
+    @apply block h-16 w-16 text-indigo-600 font-stretch-normal;
+  }
+
+  p {
+    @apply text-2xl leading-relaxed;
+  }
+}
+
+#senior .img {
   @apply bg-cover bg-center;
   background-image: url(../img/headshot-02.jpg);
 }
