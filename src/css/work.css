@@ -7,6 +7,50 @@
     }
   }
 
+  .work-items {
+    @apply flex flex-wrap px-5 py-24;
+  }
+
+  .item {
+    @apply relative mx-auto flex pt-10 pb-20 sm:items-center md:w-2/3;
+
+    .timeline {
+      @apply absolute inset-0 flex h-full w-6 items-center justify-center;
+
+      .line {
+        @apply pointer-events-none h-full w-1 bg-black;
+      }
+    }
+
+    .timeline-number {
+      @apply relative z-10 mt-10 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-indigo-600 text-sm font-medium text-white sm:mt-0;
+    }
+
+    .description-container {
+      @apply flex flex-grow flex-col items-start pl-6 sm:flex-row sm:items-center md:pl-8;
+
+      .icon {
+        @apply inline-flex h-24 w-24 flex-shrink-0 items-center justify-center rounded-full bg-black text-indigo-600;
+
+        svg {
+          @apply size-12;
+        }
+      }
+
+      .description {
+        @apply mt-6 flex-grow sm:mt-0 sm:pl-6;
+
+        h2 {
+          @apply mb-1 text-xl font-medium text-white;
+        }
+
+        p {
+          @apply leading-relaxed;
+        }
+      }
+    }
+  }
+
   .bg {
     @apply bg-cover bg-center;
     background-image: url(../img/work.jpg);
